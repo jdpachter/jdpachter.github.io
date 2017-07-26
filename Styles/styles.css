@@ -1,0 +1,59 @@
+body {
+    background-color: slategray;
+}
+aside {
+	font-family: "Avenir Next";
+	font-size: 18pt;
+	margin-left: 8%;
+	display: block;
+}
+section {
+
+}
+
+a:link, a:visited {
+    color: whitesmoke;
+    padding: 1px 25px;
+    text-decoration: none;
+    display: block;
+    left: 0pt;
+}
+
+p {
+	margin-top: 0%;
+	margin-bottom: 0%;
+}
+
+a:hover, a:active {
+	 color: orange;
+}
+
+#heading {
+    font-size: 34pt;
+    font-family: "Avenir Next";
+    color: whitesmoke;
+    margin-top: 1pt;
+	margin-left: 8%;
+    display: block;
+}
+#subheading {
+	font-size: 18pt;
+    font-family: "Avenir Next";
+    color: orange;
+    margin-top: 0pt;
+    margin-left: 47%;
+    margin-right: 35%;
+    display: block;
+}
+
+#abt {
+	margin-top: 50pt;
+}
+
+#pic {
+	margin-top: 5pt;
+	margin-left: 40%;
+	display: block;
+	/*border:1.5px solid #e5e5e5;*/
+	max-width: 100%;
+}
