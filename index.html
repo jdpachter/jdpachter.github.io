@@ -3,37 +3,41 @@
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="Styles/styles.css">
 
-	<title>Welcome</title>
+	<title>joshpachter.io</title>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
 	<script>
-		$(document).ready(function() {
-			$("body").hide();
-			$("body").fadeIn(340);
-		});
+	$(document).ready(function() {
+		$("div").hide();
+		$("aside").hide();
+		$("div").fadeIn(800);
+  	$("aside").delay(1200).fadeIn(1000);
+	});
 	</script>
 
 </head>
 
 <body>
 
-	<article>
-		<div id = "heading">
-			<p>Josh Pachter</p>
-		</div>
-		<div id = subheading>
-			<p></p>
-		</div>
-	</article>
+	<div align = "center" class = "header">
+		<p>Josh Pachter</p>
+	</div>
+	<div id = subheading>
+		<p></p>
+	</div>
+
+	<div class = "nav">
+		<ul>
+			<li><a href="default.asp">About</a></li>
+			<li><a href="news.asp">Git</a></li>
+			<li><a href="contact.asp">Contact</a></li>
+		</ul>
+	</div>
 
 	<aside>
-		<a id = "abt" href = "file:///Users/joshuapachter/Documents/Personal/About.html">About</a>
-		<a id = "git" href = "/Git.html">Git</a>
-		<a id = "contact" href = "/Contact.html">Contact</a>
+		<p>I'm not a web developer...</p>
 	</aside>
-
-
 
 
 </body>
