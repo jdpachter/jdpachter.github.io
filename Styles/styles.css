@@ -20,7 +20,7 @@ a:hover, a:active {
 }
 
 .header {
-  font-size: 34pt;
+  font-size: 36pt;
   font-family: "Avenir Next";
   color: whitesmoke;
   margin-top: 1pt;
@@ -37,14 +37,31 @@ a:hover, a:active {
 
 ul {
   list-style-type: none;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  margin: auto;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
 }
 
 aside {
   font-family: "Avenir Next";
-  font-size: 18pt;
+  font-size: 30pt;
   margin-left: 8%;
   display: inline-block;
-  color: whitesmoke;
+  color: white;
 }
 
 #subheading {
