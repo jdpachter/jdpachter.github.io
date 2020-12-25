@@ -1,0 +1,65 @@
+.bio {
+  width: 80%;
+  margin: auto;
+  color: white;
+  font-size: 1.8rem;
+}
+
+.bioHeader {
+  width: 100%;
+  line-height: 550px;
+  height: 550px;
+}
+
+.pageWrapper {
+  width: 100%;
+  height: 25vh;
+  top: 200px;
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+}
+
+.me {
+  color: pink;
+  font-size: 5.3rem;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  padding:1px;
+  border:1px solid #555;
+}
+
+p {
+  height: 100%;
+}
+
+#amzn:hover {
+  cursor: default;
+}
+
+#sf:hover {
+  cursor: default;
+}
+
+#lex:hover {
+  cursor: default;
+}
+
+#ur:hover {
+  cursor: default;
+}
+
+#cs:hover {
+  cursor: default;
+}
+
+#studied:hover {
+  cursor: default;
+}
+
+#phl:hover {
+  cursor: default;
+}
