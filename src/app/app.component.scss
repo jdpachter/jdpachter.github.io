@@ -11,13 +11,13 @@ a:hover, a:active {
 }
 
 .navbar {
+  width: 100%;
   display: flex;
   position: fixed;
   top: 7px;
   font-size: 3rem;
   color: whitesmoke;
   margin: auto;
-  z-index: 1;
 }
 
 nav {
@@ -64,12 +64,7 @@ p {
 
 body {
   text-align: center;
-}
-
-div {
-  display: block;
-  width: 100%;
-  position: relative;
+  height: 100%;
 }
 
 .word {

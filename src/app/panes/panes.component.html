@@ -1,7 +1,6 @@
-<div class = "pageWrapper">
-  <div class = "bioHeader">
-    <p *ngIf="!showPic"><b class = "me">I'm Josh</b></p>
-        <img *ngIf="showPic" src="{{currentImgUrl}}">
+<div class="introWrapper">
+  <div class="bioHeader">
+    <p><b class="me">I'm Josh</b></p>
   </div>
   <div class = "bio">
     <p>I'm a software engineer at
@@ -14,7 +13,10 @@
         <span [highlightSrc]="'assets/bioImages/ur.jpg'"> Computer Science</span> and
         <span [highlightSrc]="'assets/bioImages/schoolofathens.jpg'">Philosophy</span>.</p>
       </div>
-      <div class = "word-cloud-section">
+      <div class="bioPic">
+        <img *ngIf="showPic" src="{{currentImgUrl}}">
+        </div>
+      <div class="word-cloud-section">
         <app-wordcloud></app-wordcloud>
       </div>
     </div>
