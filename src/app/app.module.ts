@@ -6,6 +6,7 @@ import { GreetingsComponent } from './greetings/greetings.component';
 import { PanesComponent } from './panes/panes.component';
 import { WordcloudComponent } from './wordcloud/wordcloud.component';
 import { HighlightDirective } from './highlight.directive';
+import { PhraseDirective } from './phrase.directive';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { HighlightDirective } from './highlight.directive';
     GreetingsComponent,
     PanesComponent,
     WordcloudComponent,
-    HighlightDirective
+    HighlightDirective,
+    PhraseDirective
   ],
   imports: [
     BrowserModule

@@ -1,8 +1,4 @@
-import { Component, OnInit, Directive, AfterViewInit, ViewChildren, QueryList } from '@angular/core';
-
-@Directive({selector: 'child-directive'})
-class ChildDirective {
-}
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-panes',
@@ -18,6 +14,7 @@ export class PanesComponent implements OnInit {
   }
 
   ngOnInit(): void {
+
   }
 
 }

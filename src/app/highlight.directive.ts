@@ -1,9 +1,8 @@
 import { Directive, ElementRef, HostListener, Input } from '@angular/core';
-
-import { PanesComponent } from './panes/panes.component'
+import { PanesComponent } from './panes/panes.component';
 
 @Directive({
-  selector: '[highlightSrc]'
+  selector: '[appHighlight]'
 })
 export class HighlightDirective {
 
@@ -12,11 +11,10 @@ export class HighlightDirective {
     this.highlightText="";
   }
 
-  @Input('highlightSrc') highlightText: string;
+  @Input('appHighlight') highlightText: string;
 
   @HostListener('mouseenter') onMouseEnter() {
     this.highlight('#FF7A00');
-    console.log(this.highlightText)
     this.pane.showPic = true;
     this.pane.currentImgUrl = this.highlightText;
   }
@@ -25,7 +23,6 @@ export class HighlightDirective {
     this.highlight('inherit');
     this.pane.showPic = false;
   }
-
 
   private highlight(color: string) {
     this.el.nativeElement.style.color = color;

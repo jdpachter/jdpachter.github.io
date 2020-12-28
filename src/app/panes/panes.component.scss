@@ -3,6 +3,7 @@
   margin: auto;
   color: white;
   font-size: 1.8rem;
+  text-align: center;
 }
 
 .introWrapper {
@@ -13,19 +14,19 @@
 
 .me {
   color: pink;
-  font-size: 5.3rem;
 }
 
 .bioPic {
   max-width: 50vw;
   max-height: 48vh;
   margin: auto;
+  text-align: center;
 }
 
 img {
   max-width: inherit;
   max-height: inherit;
   width: auto;
-  padding:1px;
-  border:1px solid #555;
+  padding: 1px;
+  border: 2px solid #aaa;
 }
