@@ -2,7 +2,6 @@ a:link, a:visited {
   color: whitesmoke;
   padding: 1px 25px;
   text-decoration: none;
-  display: block;
   left: 0pt;
 }
 
@@ -12,12 +11,12 @@ a:hover, a:active {
 
 .navbar {
   width: 100%;
+  margin: auto;
   display: flex;
   position: fixed;
-  top: 7px;
+  top: 0px;
   font-size: 3rem;
-  color: whitesmoke;
-  margin: auto;
+  background-color: #243245;
 }
 
 nav {
@@ -26,46 +25,25 @@ nav {
 }
 
 .gitLogo {
-  margin-top: 9px;
+  margin: auto;
   width: 60px;
 }
 
 .twitterLogo {
-  margin-top: 9px;
+  margin: auto;
   width: 60px;
 }
 
 .liLogo {
-  margin-top: 9px;
+  margin: auto;
   width: 60px;
 }
-
 
 .me {
   color: pink;
   font-size: 1.7rem;
 }
 
-b {
-  color: #fff;
-}
-
-p {
-  color: white;
-  font-size: 1rem;
-}
-
-#words {
-  width: 80%;
-  height: 500px;
-  margin: auto;
-  margin-top: 70px;
-}
-
-body {
-  height: 100%;
-}
-
-.word {
-  font-size: 1.5rem;
+app-greetings {
+  cursor: pointer;
 }

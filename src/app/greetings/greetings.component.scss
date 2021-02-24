@@ -1,5 +1,10 @@
 #welcome-banner {
-  color: pink;
+  color: #ff9999;
   font-size: 3rem;
   text-align: center;
+  padding-left: 50px;
+
+}
+#welcome-banner:focus {
+  outline: 0;
 }

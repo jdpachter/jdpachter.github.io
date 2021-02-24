@@ -1,0 +1,46 @@
+.bio {
+  width: 80%;
+  padding: 20px;
+  margin: auto;
+  color: #243245;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.bioCaption {
+  color: #243245;
+  font-style: oblique;
+  width: 20%;
+  margin: auto;
+}
+
+.bioWrapper {
+  position: relative;
+  display: flex;
+  top: 180px;
+  width: 100%;
+  margin: 0px;
+  min-height: 500px;
+}
+
+.wcLink {
+  color: #ff9999;
+  text-decoration: inherit;
+}
+
+.bioPic {
+  max-height: 48vh;
+  margin: auto;
+  text-align: center;
+}
+
+img {
+  max-width: inherit;
+  max-height: inherit;
+  width: auto;
+  border: 2px solid #888;
+}
+
+.word-cloud-section {
+  width: 100vw;
+}

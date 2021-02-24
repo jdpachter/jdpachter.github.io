@@ -9,5 +9,6 @@ export const GREETINGS: Greeting[] = [
   { id: 5, text: 'hola' },
   { id: 6, text: 'sup' },
   { id: 7, text: 'yo' },
-  { id: 8, text: 'konichiwa' }
+  { id: 8, text: 'konichiwa' },
+  { id: 9, text: 'whaddup' }
 ];

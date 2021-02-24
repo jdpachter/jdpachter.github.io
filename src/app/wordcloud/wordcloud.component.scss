@@ -1,6 +1,6 @@
 .word-cloud {
-  color: pink;
-  font-size: 1.5rem;
+  color: #243245;
+  font-size: 1.7rem;
   position: relative;
   width: 80%;
   height: 50vh;
@@ -14,5 +14,18 @@
 }
 
 [appPhrase]:hover {
-  color: orange;
+  color: #243245;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.wordcloud-description{
+  width: 80%;
+  margin: auto;
+  color: #ff9999;
+  font-size: 1.3rem;
+  text-align: center;
 }

@@ -1,0 +1,25 @@
+<div class="bioWrapper">
+  <div class="bioHeader">
+  <div *ngIf="_router.url != '/wordcloud'" class="bio">
+    <p>I'm Josh, a software engineer at
+      <span [appHighlight]="'amzn'">Amazon</span> in
+      <span [appHighlight]="'sf'">San Francisco</span>.
+      Originally from <span [appHighlight]="'lex'">
+        outside Boston</span>, I went to school at the
+        <span [appHighlight]="'ur'" > University of Rochester</span>
+        where I <span [appHighlight]="'studying'">studied</span>
+        <span [appHighlight]="'cs'"> Computer Science</span> and
+        <span [appHighlight]="'phl'">Philosophy</span>.
+        Nobody loves a bio, <a class="wcLink" routerLink="/wordcloud">here's a better way to get to know me.</a></p>
+      </div>
+      <div class="bioPic">
+        <img src="{{currentImgUrl}}">
+        <div class="bioCaption">
+          {{caption}}
+          </div>
+        </div>
+
+      <div class="word-cloud-section">
+        <router-outlet></router-outlet>
+      </div>
+    </div>

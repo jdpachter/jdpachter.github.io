@@ -1,5 +1,6 @@
 import { Component, OnInit, ElementRef, ViewChildren, ViewChild, QueryList, AfterViewInit } from '@angular/core';
 import { WORDS } from './allWords';
+import { Pixel } from './pixel'
 import { Word } from './word';
 import { PhraseDirective } from '../phrase.directive';
 import { fromEvent, Observable, Subscription } from "rxjs";
@@ -41,29 +42,40 @@ export class WordcloudComponent implements OnInit, AfterViewInit {
   }
 
   generateWordCloud(width: number, height: number): void {
-    var curRow = 0, numPlaced = 0, numPerRow = 5;
-    const totalRows = this.phraseElements.length/numPerRow;
-    var rowHeight = height/totalRows;
-    var currentLeftPosition = 0;
-
+    var overlapping = new Map();
     this.phraseElements.toArray().forEach(phrase => {
-      var curPhraseWidth = phrase.el.nativeElement.clientWidth;
-      curRow = Math.floor(numPlaced/numPerRow);
-      var numRemainingInRow = numPerRow - (numPlaced % numPerRow);
-      if(numPlaced % numPerRow == 0) {
-        currentLeftPosition = this.getRandInRange(curPhraseWidth*1.1, width/(numRemainingInRow));
+      var curPhraseWidth = phrase.width;
+      var curPhraseHeight = phrase.height;
+      var currentX = Math.floor(this.getRandInRange(0, width));
+      var currentY = Math.floor(this.getRandInRange(0, height));
+      var curPix = new Pixel(currentX, currentY);
+
+      while(this.checkOverlapping(curPhraseWidth, curPhraseHeight, currentX, currentY, overlapping)) {
+        console.log("is overlapping: " + phrase);
+        currentX = Math.floor(this.getRandInRange(0, width));
+        currentY = Math.floor(this.getRandInRange(0, height));
+        curPix = new Pixel(currentX, currentY);
       }
-      var currentTopPosition = curRow*rowHeight;
-      if (curRow == Math.floor(totalRows)) {
-        var numRemainingLastRow = this.phraseElements.length - numPlaced;
-        var leftOffset = this.getRandInRange(curPhraseWidth, width/numRemainingLastRow);
-      } else {
-        var leftOffset = this.getRandInRange(curPhraseWidth, width/numPerRow);
+      phrase.setPosition(currentX, currentY);
+      for(let xPixel = currentX; xPixel < currentX+curPhraseWidth; xPixel++) {
+        for(let yPixel = currentY; yPixel < currentY+curPhraseHeight; yPixel++) {
+          let p = new Pixel(xPixel, yPixel);
+          overlapping.set(p.toString(), true);
+        }
       }
-      phrase.setPosition(currentLeftPosition*1.18, currentTopPosition);
-      currentLeftPosition += leftOffset;
-      numPlaced++;
     });
+  }
+
+  private checkOverlapping(curPhraseWidth: number, curPhraseHeight: number, currentX: number, currentY: number, overlapping: Map<string, boolean>): boolean {
+    for(let xPixel = currentX; xPixel < currentX+curPhraseWidth; xPixel++) {
+      for(let yPixel = currentY; yPixel < currentY+curPhraseHeight; yPixel++) {
+        let p = new Pixel(xPixel, yPixel);
+        if(overlapping.get(p.toString())) {
+          return true;
+        }
+      }
+    }
+    return false;
   }
 
   private getWidth(): number {
@@ -75,6 +87,9 @@ export class WordcloudComponent implements OnInit, AfterViewInit {
   }
 
   private  getRandInRange(min: number, max: number) {
+    if(max < min) {
+      return min;
+    }
     return Math.random() * (max - min) + min;
   }
 }
