@@ -53,7 +53,7 @@ __webpack_require__.r(__webpack_exports__);
 let BIOIMAGES = new Map([
     ['sf', new _BioImageData__WEBPACK_IMPORTED_MODULE_0__["BioImageData"]('assets/bioImages/sf.jpg', 'Downtown SF at dusk as seen from Kite Hill in Eureka Valley')],
     ['amzn', new _BioImageData__WEBPACK_IMPORTED_MODULE_0__["BioImageData"]('assets/bioImages/amznHQ.jpg', 'The Amazon Spheres at the South Lake Union Headquarters in Seattle')],
-    ['lex', new _BioImageData__WEBPACK_IMPORTED_MODULE_0__["BioImageData"]('assets/bioImages/lex.jpg', 'The annual battle of Lexington reenactment in Lexington, MA')],
+    ['lex', new _BioImageData__WEBPACK_IMPORTED_MODULE_0__["BioImageData"]('assets/bioImages/lex.jpg', 'The annual battle of Lexington re-enactment in Lexington, MA')],
     ['phl', new _BioImageData__WEBPACK_IMPORTED_MODULE_0__["BioImageData"]('assets/bioImages/schoolofathens.jpg', 'Raphael\'s famous School of Athens painting depicting Plato and Aristotle. Plato points towards the sky in a nod to Platonian Idealism while Aristotle gestures towards the ground to remind us of his belief in an empirical reality.')],
     ['studying', new _BioImageData__WEBPACK_IMPORTED_MODULE_0__["BioImageData"]('assets/bioImages/studying.png', '"Studying" in the library')],
     ['cs', new _BioImageData__WEBPACK_IMPORTED_MODULE_0__["BioImageData"]('assets/bioImages/cs.jpg', 'This tweet hits hard')],
