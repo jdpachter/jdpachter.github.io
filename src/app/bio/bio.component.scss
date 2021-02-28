@@ -11,7 +11,7 @@
   color: #243245;
   font-size: 12pt;
   font-style: oblique;
-  width: 20%;
+  width: 75%;
   margin: auto;
 }
 
@@ -30,7 +30,8 @@
 }
 
 .bioPic {
-  max-height: 48vh;
+  max-width: 48vw;
+  max-height: 60vh;
   margin: auto;
   text-align: center;
 }
@@ -38,7 +39,6 @@
 img {
   max-width: inherit;
   max-height: inherit;
-  width: auto;
   border: 2px solid #888;
 }
 
