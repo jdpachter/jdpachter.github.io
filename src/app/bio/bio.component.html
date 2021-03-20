@@ -10,11 +10,10 @@
         where I <span [appHighlight]="'studying'">studied</span>
         <span [appHighlight]="'cs'"> Computer Science</span> and
         <span [appHighlight]="'phl'">Philosophy</span>.
-        Nobody loves a bio, <a class="wcLink" routerLink="/wordcloud">here's a better way to get to know me.</a></p>
+         </p>
         <div class="bioPic">
           <img src="{{currentImgUrl}}">
-          <div class="bioCaption">
-            {{caption}}
+          <div [innerHTML]="caption" class="bioCaption">
             </div>
           </div>
       </div>

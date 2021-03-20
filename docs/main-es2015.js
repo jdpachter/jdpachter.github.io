@@ -51,10 +51,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _BioImageData__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./BioImageData */ "t2Dc");
 
 let BIOIMAGES = new Map([
-    ['sf', new _BioImageData__WEBPACK_IMPORTED_MODULE_0__["BioImageData"]('assets/bioImages/sf.jpg', 'Downtown SF at dusk as seen from Kite Hill in Eureka Valley')],
-    ['amzn', new _BioImageData__WEBPACK_IMPORTED_MODULE_0__["BioImageData"]('assets/bioImages/amznHQ.jpg', 'The Amazon Spheres at the South Lake Union Headquarters in Seattle')],
-    ['lex', new _BioImageData__WEBPACK_IMPORTED_MODULE_0__["BioImageData"]('assets/bioImages/lex.jpg', 'The annual battle of Lexington re-enactment in Lexington, MA')],
-    ['phl', new _BioImageData__WEBPACK_IMPORTED_MODULE_0__["BioImageData"]('assets/bioImages/schoolofathens.jpg', 'Raphael\'s School of Athens depicting Plato and Aristotle. Plato points towards the sky in a nod to Platonian Idealism while Aristotle gestures towards the ground to remind us of his belief in an empirical reality.')],
+    ['sf', new _BioImageData__WEBPACK_IMPORTED_MODULE_0__["BioImageData"]('assets/bioImages/sf.jpg', 'Downtown SF at dusk as seen from <a href="https://www.google.com/maps/place/Kite+Hill/@37.7582833,-122.4415667,15z/data=!4m2!3m1!1s0x0:0xb72ce94acb6e9dc1?sa=X&ved=2ahUKEwjCsvytx43vAhURvp4KHWEwAmgQ_BIwEHoECB8QBQ">Kite Hill</a>')],
+    ['amzn', new _BioImageData__WEBPACK_IMPORTED_MODULE_0__["BioImageData"]('assets/bioImages/amznHQ.jpg', 'The <a href="https://www.seattlespheres.com">Amazon Spheres</a> at the South Lake Union Headquarters in Seattle')],
+    ['lex', new _BioImageData__WEBPACK_IMPORTED_MODULE_0__["BioImageData"]('assets/bioImages/lex.jpg', 'The annual <a href="https://en.wikipedia.org/wiki/Battles_of_Lexington_and_Concord">battle of Lexington</a> re-enactment in Lexington, MA')],
+    ['phl', new _BioImageData__WEBPACK_IMPORTED_MODULE_0__["BioImageData"]('assets/bioImages/schoolofathens.jpg', 'Plato and Aristotle in <a href="https://en.wikipedia.org/wiki/The_School_of_Athens">School of Athens</a> ❤️')],
     ['studying', new _BioImageData__WEBPACK_IMPORTED_MODULE_0__["BioImageData"]('assets/bioImages/studying.png', '"Studying" in the library')],
     ['cs', new _BioImageData__WEBPACK_IMPORTED_MODULE_0__["BioImageData"]('assets/bioImages/cs.jpg', 'This tweet hits hard')],
     ['ur', new _BioImageData__WEBPACK_IMPORTED_MODULE_0__["BioImageData"]('assets/bioImages/ur.jpg', 'Rush Rhees, UR\'s main library')],
@@ -110,16 +110,11 @@ function BioComponent_div_2_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](20, "span", 5);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](21, "Philosophy");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](22, ". Nobody loves a bio, ");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](23, "a", 6);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](24, "here's a better way to get to know me.");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](22, ". ");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](25, "div", 7);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](26, "img", 8);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](27, "div", 9);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](28);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](23, "div", 6);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](24, "img", 7);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](25, "div", 8);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 } if (rf & 2) {
@@ -138,10 +133,10 @@ function BioComponent_div_2_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("appHighlight", "cs");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("appHighlight", "phl");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](6);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](4);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpropertyInterpolate"]("src", ctx_r0.currentImgUrl, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsanitizeUrl"]);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" ", ctx_r0.caption, " ");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("innerHTML", ctx_r0.caption, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsanitizeHtml"]);
 } }
 class BioComponent {
     constructor(_router) {
@@ -155,10 +150,10 @@ class BioComponent {
     }
 }
 BioComponent.ɵfac = function BioComponent_Factory(t) { return new (t || BioComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"])); };
-BioComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: BioComponent, selectors: [["app-bio"]], decls: 5, vars: 1, consts: [[1, "bioWrapper"], [1, "bioHeader"], ["class", "bio", 4, "ngIf"], [1, "word-cloud-section"], [1, "bio"], [3, "appHighlight"], ["routerLink", "/wordcloud", 1, "wcLink"], [1, "bioPic"], [3, "src"], [1, "bioCaption"]], template: function BioComponent_Template(rf, ctx) { if (rf & 1) {
+BioComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: BioComponent, selectors: [["app-bio"]], decls: 5, vars: 1, consts: [[1, "bioWrapper"], [1, "bioHeader"], ["class", "bio", 4, "ngIf"], [1, "word-cloud-section"], [1, "bio"], [3, "appHighlight"], [1, "bioPic"], [3, "src"], [1, "bioCaption", 3, "innerHTML"]], template: function BioComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](2, BioComponent_div_2_Template, 29, 9, "div", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](2, BioComponent_div_2_Template, 26, 9, "div", 2);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "div", 3);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](4, "router-outlet");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -329,7 +324,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-const _c0 = "a[_ngcontent-%COMP%]:link, a[_ngcontent-%COMP%]:visited {\n  color: whitesmoke;\n  padding: 1px 25px;\n  text-decoration: none;\n  left: 0pt;\n}\n\na[_ngcontent-%COMP%]:hover, a[_ngcontent-%COMP%]:active {\n  color: orange;\n}\n\n.navbar[_ngcontent-%COMP%] {\n  width: 100%;\n  margin: auto;\n  display: flex;\n  position: fixed;\n  top: 0px;\n  font-size: 3rem;\n  background-color: #243245;\n}\n\nnav[_ngcontent-%COMP%] {\n  margin: auto;\n  font-size: 3rem;\n}\n\n.gitLogo[_ngcontent-%COMP%] {\n  margin: auto;\n  width: 60px;\n}\n\n.twitterLogo[_ngcontent-%COMP%] {\n  margin: auto;\n  width: 60px;\n}\n\n.liLogo[_ngcontent-%COMP%] {\n  margin: auto;\n  width: 60px;\n}\n\n.me[_ngcontent-%COMP%] {\n  color: pink;\n  font-size: 1.7rem;\n}\n\napp-greetings[_ngcontent-%COMP%] {\n  cursor: pointer;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL2FwcC5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLGlCQUFBO0VBQ0EsaUJBQUE7RUFDQSxxQkFBQTtFQUNBLFNBQUE7QUFDRjs7QUFFQTtFQUNFLGFBQUE7QUFDRjs7QUFFQTtFQUNFLFdBQUE7RUFDQSxZQUFBO0VBQ0EsYUFBQTtFQUNBLGVBQUE7RUFDQSxRQUFBO0VBQ0EsZUFBQTtFQUNBLHlCQUFBO0FBQ0Y7O0FBRUE7RUFDRSxZQUFBO0VBQ0EsZUFBQTtBQUNGOztBQUVBO0VBQ0UsWUFBQTtFQUNBLFdBQUE7QUFDRjs7QUFFQTtFQUNFLFlBQUE7RUFDQSxXQUFBO0FBQ0Y7O0FBRUE7RUFDRSxZQUFBO0VBQ0EsV0FBQTtBQUNGOztBQUVBO0VBQ0UsV0FBQTtFQUNBLGlCQUFBO0FBQ0Y7O0FBRUE7RUFDRSxlQUFBO0FBQ0YiLCJmaWxlIjoiYXBwLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiYTpsaW5rLCBhOnZpc2l0ZWQge1xuICBjb2xvcjogd2hpdGVzbW9rZTtcbiAgcGFkZGluZzogMXB4IDI1cHg7XG4gIHRleHQtZGVjb3JhdGlvbjogbm9uZTtcbiAgbGVmdDogMHB0O1xufVxuXG5hOmhvdmVyLCBhOmFjdGl2ZSB7XG4gIGNvbG9yOiBvcmFuZ2U7XG59XG5cbi5uYXZiYXIge1xuICB3aWR0aDogMTAwJTtcbiAgbWFyZ2luOiBhdXRvO1xuICBkaXNwbGF5OiBmbGV4O1xuICBwb3NpdGlvbjogZml4ZWQ7XG4gIHRvcDogMHB4O1xuICBmb250LXNpemU6IDNyZW07XG4gIGJhY2tncm91bmQtY29sb3I6ICMyNDMyNDU7XG59XG5cbm5hdiB7XG4gIG1hcmdpbjogYXV0bztcbiAgZm9udC1zaXplOiAzcmVtO1xufVxuXG4uZ2l0TG9nbyB7XG4gIG1hcmdpbjogYXV0bztcbiAgd2lkdGg6IDYwcHg7XG59XG5cbi50d2l0dGVyTG9nbyB7XG4gIG1hcmdpbjogYXV0bztcbiAgd2lkdGg6IDYwcHg7XG59XG5cbi5saUxvZ28ge1xuICBtYXJnaW46IGF1dG87XG4gIHdpZHRoOiA2MHB4O1xufVxuXG4ubWUge1xuICBjb2xvcjogcGluaztcbiAgZm9udC1zaXplOiAxLjdyZW07XG59XG5cbmFwcC1ncmVldGluZ3Mge1xuICBjdXJzb3I6IHBvaW50ZXI7XG59XG4iXX0= */";
+const _c0 = "a[_ngcontent-%COMP%]:link, a[_ngcontent-%COMP%]:visited {\n  color: whitesmoke;\n  padding: 1px 25px;\n  text-decoration: none;\n  left: 0pt;\n}\n\na[_ngcontent-%COMP%]:hover, a[_ngcontent-%COMP%]:active {\n  color: #ff9999;\n}\n\n.navbar[_ngcontent-%COMP%] {\n  width: 100%;\n  margin: auto;\n  display: flex;\n  position: fixed;\n  top: 0px;\n  font-size: 3rem;\n  background-color: #243245;\n}\n\nnav[_ngcontent-%COMP%] {\n  margin: auto;\n  font-size: 3rem;\n}\n\n.gitLogo[_ngcontent-%COMP%] {\n  margin: auto;\n  width: 60px;\n}\n\n.twitterLogo[_ngcontent-%COMP%] {\n  margin: auto;\n  width: 60px;\n}\n\n.liLogo[_ngcontent-%COMP%] {\n  margin: auto;\n  width: 60px;\n}\n\n.me[_ngcontent-%COMP%] {\n  color: pink;\n  font-size: 1.7rem;\n}\n\napp-greetings[_ngcontent-%COMP%] {\n  cursor: pointer;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL2FwcC5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLGlCQUFBO0VBQ0EsaUJBQUE7RUFDQSxxQkFBQTtFQUNBLFNBQUE7QUFDRjs7QUFFQTtFQUNFLGNBQUE7QUFDRjs7QUFFQTtFQUNFLFdBQUE7RUFDQSxZQUFBO0VBQ0EsYUFBQTtFQUNBLGVBQUE7RUFDQSxRQUFBO0VBQ0EsZUFBQTtFQUNBLHlCQUFBO0FBQ0Y7O0FBRUE7RUFDRSxZQUFBO0VBQ0EsZUFBQTtBQUNGOztBQUVBO0VBQ0UsWUFBQTtFQUNBLFdBQUE7QUFDRjs7QUFFQTtFQUNFLFlBQUE7RUFDQSxXQUFBO0FBQ0Y7O0FBRUE7RUFDRSxZQUFBO0VBQ0EsV0FBQTtBQUNGOztBQUVBO0VBQ0UsV0FBQTtFQUNBLGlCQUFBO0FBQ0Y7O0FBRUE7RUFDRSxlQUFBO0FBQ0YiLCJmaWxlIjoiYXBwLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiYTpsaW5rLCBhOnZpc2l0ZWQge1xuICBjb2xvcjogd2hpdGVzbW9rZTtcbiAgcGFkZGluZzogMXB4IDI1cHg7XG4gIHRleHQtZGVjb3JhdGlvbjogbm9uZTtcbiAgbGVmdDogMHB0O1xufVxuXG5hOmhvdmVyLCBhOmFjdGl2ZSB7XG4gIGNvbG9yOiAjZmY5OTk5O1xufVxuXG4ubmF2YmFyIHtcbiAgd2lkdGg6IDEwMCU7XG4gIG1hcmdpbjogYXV0bztcbiAgZGlzcGxheTogZmxleDtcbiAgcG9zaXRpb246IGZpeGVkO1xuICB0b3A6IDBweDtcbiAgZm9udC1zaXplOiAzcmVtO1xuICBiYWNrZ3JvdW5kLWNvbG9yOiAjMjQzMjQ1O1xufVxuXG5uYXYge1xuICBtYXJnaW46IGF1dG87XG4gIGZvbnQtc2l6ZTogM3JlbTtcbn1cblxuLmdpdExvZ28ge1xuICBtYXJnaW46IGF1dG87XG4gIHdpZHRoOiA2MHB4O1xufVxuXG4udHdpdHRlckxvZ28ge1xuICBtYXJnaW46IGF1dG87XG4gIHdpZHRoOiA2MHB4O1xufVxuXG4ubGlMb2dvIHtcbiAgbWFyZ2luOiBhdXRvO1xuICB3aWR0aDogNjBweDtcbn1cblxuLm1lIHtcbiAgY29sb3I6IHBpbms7XG4gIGZvbnQtc2l6ZTogMS43cmVtO1xufVxuXG5hcHAtZ3JlZXRpbmdzIHtcbiAgY3Vyc29yOiBwb2ludGVyO1xufVxuIl19 */";
 class AppComponent {
     constructor(_router) {
         this._router = _router;
@@ -338,7 +333,7 @@ class AppComponent {
     }
 }
 AppComponent.ɵfac = function AppComponent_Factory(t) { return new (t || AppComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_1__["Router"])); };
-AppComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: AppComponent, selectors: [["app-root"]], decls: 17, vars: 0, consts: [["charset", "utf-8"], ["charset", "UTF-8"], [1, "navbar"], ["href", "https://github.com/jdpachter"], ["src", "assets/Git-Icon-White.png", 1, "gitLogo"], ["href", "https://linkedin.com/in/jdpachter"], ["src", "assets/LI-In-Bug.png", 1, "liLogo"], ["href", "https://twitter.com/JoshuaPachter"], ["src", "assets/twitterLogo.png", 1, "twitterLogo"]], template: function AppComponent_Template(rf, ctx) { if (rf & 1) {
+AppComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: AppComponent, selectors: [["app-root"]], decls: 20, vars: 0, consts: [["charset", "utf-8"], ["charset", "UTF-8"], [1, "navbar"], ["href", "https://github.com/jdpachter"], ["src", "assets/Git-Icon-White.png", 1, "gitLogo"], ["href", "https://linkedin.com/in/jdpachter"], ["src", "assets/LI-In-Bug.png", 1, "liLogo"], ["href", "https://twitter.com/JoshuaPachter"], ["src", "assets/twitterLogo.png", 1, "twitterLogo"], ["routerLink", "/wordcloud", 1, "wcLink"]], template: function AppComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "head");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "meta", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "meta", 1);
@@ -361,12 +356,17 @@ AppComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineCompo
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](14, "img", 8);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](15, "nav");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](16, "a", 9);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](17, "About");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](15, "div");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](16, "app-bio");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    } }, directives: [_greetings_greetings_component__WEBPACK_IMPORTED_MODULE_2__["GreetingsComponent"], _bio_bio_component__WEBPACK_IMPORTED_MODULE_3__["BioComponent"]], styles: [_c0, _c0] });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](18, "div");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](19, "app-bio");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    } }, directives: [_greetings_greetings_component__WEBPACK_IMPORTED_MODULE_2__["GreetingsComponent"], _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterLinkWithHref"], _bio_bio_component__WEBPACK_IMPORTED_MODULE_3__["BioComponent"]], styles: [_c0, _c0] });
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](AppComponent, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
         args: [{
@@ -498,7 +498,7 @@ AppModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector
                 bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_2__["AppComponent"]]
             }]
     }], null, null); })();
-_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵsetComponentScope"](_bio_bio_component__WEBPACK_IMPORTED_MODULE_4__["BioComponent"], [_angular_common__WEBPACK_IMPORTED_MODULE_9__["NgIf"], _highlight_directive__WEBPACK_IMPORTED_MODULE_6__["HighlightDirective"], _angular_router__WEBPACK_IMPORTED_MODULE_10__["RouterLinkWithHref"], _angular_router__WEBPACK_IMPORTED_MODULE_10__["RouterOutlet"]], []);
+_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵsetComponentScope"](_bio_bio_component__WEBPACK_IMPORTED_MODULE_4__["BioComponent"], [_angular_common__WEBPACK_IMPORTED_MODULE_9__["NgIf"], _highlight_directive__WEBPACK_IMPORTED_MODULE_6__["HighlightDirective"], _angular_router__WEBPACK_IMPORTED_MODULE_10__["RouterOutlet"]], []);
 
 
 /***/ }),
@@ -661,7 +661,7 @@ WordcloudComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefin
     } }, decls: 6, vars: 1, consts: [[1, "wordcloud-description"], [1, "word-cloud"], ["wordCloud", ""], ["appPhrase", "", 4, "ngFor", "ngForOf"], ["appPhrase", ""], [3, "href"]], template: function WordcloudComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "h2");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, " these topics are on my mind a lot");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, "These topics are on my mind a lot");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "div", 1, 2);
@@ -759,13 +759,13 @@ class AppRoutingModule {
 }
 AppRoutingModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineNgModule"]({ type: AppRoutingModule });
 AppRoutingModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector"]({ factory: function AppRoutingModule_Factory(t) { return new (t || AppRoutingModule)(); }, imports: [[_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
-            _angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"].forRoot(routes, { useHash: true })], _angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"]] });
+            _angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"].forRoot(routes)], _angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"]] });
 (function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵsetNgModuleScope"](AppRoutingModule, { imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"], _angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"]], exports: [_angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"]] }); })();
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](AppRoutingModule, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"],
         args: [{
                 imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
-                    _angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"].forRoot(routes, { useHash: true })],
+                    _angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"].forRoot(routes)],
                 exports: [_angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"]]
             }]
     }], null, null); })();
