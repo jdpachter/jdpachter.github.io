@@ -26,7 +26,7 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 ## Deploying
 
-Run `ng build` to generate `dist/*` and `ng build --prod=true --outputPath=docs --baseHref=/` to generate `docs/*`.
+Run `ng build` to generate `dist/*` and `ng build --output-path docs --base-href /jdpachter.github.io/` to generate `docs/*`.
 
 `git push` to publish.
 
