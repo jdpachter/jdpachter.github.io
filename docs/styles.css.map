@@ -1,1 +1,0 @@
-{"version":3,"sources":["styles.scss"],"names":[],"mappings":"AAAA;AACA;EAEE;AAAF;AAGA;EACE;AAAF,C","file":"styles.css","sourcesContent":["/* You can add global styles to this file, and also import other style files */\nhtml {\n  // background-color: #243245;\n  font-family: \"Bangla Sangam MN\";\n}\n\nbody {\n  margin: 0px;\n}\n"],"sourceRoot":"webpack:///"}
