@@ -1,5 +1,4 @@
-import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { Component, HostListener} from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -8,9 +7,21 @@ import { Router } from '@angular/router';
 })
 export class AppComponent {
   title = 'jdp';
-  router: string;
+  scrollTop = 0;
+  hideNav = false;
 
-  constructor(private _router: Router) {
-    this.router = _router.url;
+  @HostListener('window:scroll') onScroll(e: Event): void {
+      console.log(this.getYPosition(e));
+   }
+
+  getYPosition(e: Event): number {
+       return (e.target as Element).scrollTop;
   }
+
+  // onScroll(event) {
+  //   console.log("scroll");
+  //   this.hideNav = this.scrollTop < event.target.scrollTop;
+  //   this.scrollTop = event.target.scrollTop;
+  // }
+
 }

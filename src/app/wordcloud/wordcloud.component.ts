@@ -67,8 +67,8 @@ export class WordcloudComponent implements OnInit, AfterViewInit {
   }
 
   private checkOverlapping(curPhraseWidth: number, curPhraseHeight: number, currentX: number, currentY: number, overlapping: Map<string, boolean>): boolean {
-    for(let xPixel = currentX; xPixel < currentX+curPhraseWidth; xPixel++) {
-      for(let yPixel = currentY; yPixel < currentY+curPhraseHeight; yPixel++) {
+    for(let xPixel = currentX-20; xPixel < currentX+curPhraseWidth+20; xPixel++) {
+      for(let yPixel = currentY-20; yPixel < currentY+curPhraseHeight+20; yPixel++) {
         let p = new Pixel(xPixel, yPixel);
         if(overlapping.get(p.toString())) {
           return true;

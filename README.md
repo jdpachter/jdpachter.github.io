@@ -1,5 +1,7 @@
 # jdp
 
+I wanted an excuse to learn Angular so this is that :) I update this occasionally and have some fun plans for componenets to include. My goal is to introduce myself in a way that's intuitive and easy to understand.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.4.
 
 ## Development server

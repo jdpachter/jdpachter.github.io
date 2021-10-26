@@ -9,14 +9,24 @@ a:hover, a:active {
   color: #ff9999;
 }
 
-.navbar {
+.page-container {
   width: 100%;
-  margin: auto;
-  display: flex;
-  position: fixed;
-  top: 0px;
-  font-size: 3rem;
+  height: 100%;
   background-color: #243245;
+}
+
+.nav {
+  display: inline-flex;
+  width: 100%;
+  font-size: 3rem;
+  position: relative;
+}
+
+.nav-right {
+  width: 70%;
+  display: inline-flex;
+  font-size: 3rem;
+  margin: auto;
 }
 
 nav {
@@ -25,17 +35,14 @@ nav {
 }
 
 .gitLogo {
-  margin: auto;
   width: 60px;
 }
 
 .twitterLogo {
-  margin: auto;
   width: 60px;
 }
 
 .liLogo {
-  margin: auto;
   width: 60px;
 }
 
@@ -45,5 +52,7 @@ nav {
 }
 
 app-greetings {
+  padding-left: 20px;
   cursor: pointer;
+  width: 30%;
 }

@@ -4,16 +4,16 @@
   <link rel="stylesheet" href="app.component.scss">
 </head>
 <body>
-  <div class = "navbar">
-    <app-greetings></app-greetings>
-    <nav><a href="https://github.com/jdpachter"><img class = "gitLogo" src = "assets/Git-Icon-White.png"></a></nav>
-    <nav><a href="https://linkedin.com/in/jdpachter"><img class = "liLogo" src = "assets/LI-In-Bug.png"></a></nav>
-    <nav><a href="https://twitter.com/JoshuaPachter"><img class = "twitterLogo" src = "assets/twitterLogo.png"></a></nav>
-    <nav><a class="wcLink" routerLink="/wordcloud">About</a></nav>
+  <div class = "page-container">
+    <div class = "nav">
+      <app-greetings></app-greetings>
+      <div class = "nav-right">
+        <nav><a href="https://github.com/jdpachter"><img class = "gitLogo" src = "assets/Git-Icon-White.png"></a></nav>
+        <nav><a href="https://linkedin.com/in/jdpachter"><img class = "liLogo" src = "assets/LI-In-Bug.png"></a></nav>
+        <nav><a href="https://twitter.com/JoshuaPachter"><img class = "twitterLogo" src = "assets/twitterLogo.png"></a></nav>
+        </div>
+    </div>
   </div>
-
-  <div>
-    <app-bio></app-bio>
-  </div>
+  <app-wordcloud></app-wordcloud>
 
   </body>
