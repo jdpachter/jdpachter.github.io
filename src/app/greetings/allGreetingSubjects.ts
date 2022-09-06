@@ -10,5 +10,6 @@ export const GREETING_SUBJECTS: GreetingSubject[] = [
   { id: 6, text: 'fam' },
   { id: 7, text: 'y\'all' },
   { id: 8, text: 'team' },
-  { id: 9, text: 'gang' }
+  { id: 9, text: 'gang' },
+  { id: 10, text: 'bestie' }
 ];

@@ -7,7 +7,7 @@ import { BioComponent } from './bio/bio.component';
 import { WordcloudComponent } from './wordcloud/wordcloud.component';
 import { HighlightDirective } from './highlight.directive';
 import { PhraseDirective } from './phrase.directive';
-import { AppRoutingModule } from './app-routing.module';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -20,7 +20,7 @@ import { AppRoutingModule } from './app-routing.module';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

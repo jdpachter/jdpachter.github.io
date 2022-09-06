@@ -23,10 +23,10 @@ a:hover, a:active {
 }
 
 .nav-right {
-  width: 70%;
   display: inline-flex;
-  font-size: 3rem;
-  margin: auto;
+  margin-left: auto;
+  margin-right: 0;
+  padding-bottom: 15px;
 }
 
 nav {
@@ -51,8 +51,14 @@ nav {
   font-size: 1.7rem;
 }
 
-app-greetings {
-  padding-left: 20px;
-  cursor: pointer;
-  width: 30%;
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  app-greetings {
+    margin: auto;
+  }
+
+  .nav-right {
+    display: inline-flex;
+    margin: auto;
+    padding-bottom: 15px;
+  }
 }

@@ -18,9 +18,10 @@
 .bioWrapper {
   position: relative;
   display: flex;
-  top: 180px;
   width: 100%;
-  margin: 0px;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 20px;
   min-height: 500px;
 }
 
@@ -42,6 +43,15 @@ img {
   border: 2px solid #888;
 }
 
+.top3 {
+  color: #ff9999;
+}
+
 .word-cloud-section {
   width: 100vw;
+}
+
+.about-me {
+  color: #243245;
+  font-size: 2rem;
 }
