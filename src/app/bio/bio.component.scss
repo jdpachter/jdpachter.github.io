@@ -1,19 +1,4 @@
-.bio {
-  width: 80%;
-  padding: 20px;
-  margin: auto;
-  color: #243245;
-  font-size: 1.4rem;
-  text-align: center;
-}
 
-.bioCaption {
-  color: #243245;
-  font-size: 12pt;
-  font-style: oblique;
-  width: 75%;
-  margin: auto;
-}
 
 .bioWrapper {
   position: relative;
@@ -25,33 +10,16 @@
   min-height: 500px;
 }
 
-.wcLink {
-  color: #ff9999;
-  text-decoration: inherit;
-}
-
-.bioPic {
-  max-width: 48vw;
-  max-height: 60vh;
-  margin: auto;
-  text-align: center;
-}
-
-img {
-  max-width: inherit;
-  max-height: inherit;
-  border: 2px solid #888;
-}
-
 .top3 {
   color: #ff9999;
-}
-
-.word-cloud-section {
-  width: 100vw;
 }
 
 .about-me {
   color: #243245;
   font-size: 2rem;
+}
+
+.header-center {
+  display: flex;
+  justify-content: center;
 }
