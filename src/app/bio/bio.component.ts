@@ -1,22 +1,10 @@
-import { Component, OnInit } from '@angular/core';
-import { BIOIMAGES } from './imgCaptionMap'
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-bio',
   templateUrl: './bio.component.html',
   styleUrls: ['./bio.component.scss']
 })
-export class BioComponent implements OnInit {
-  caption: string;
-  currentImgUrl: string;
-  showPic: boolean = false;
+export class BioComponent {
 
-  constructor() {
-    this.currentImgUrl = BIOIMAGES.get('sf')!.imgPath;
-    this.caption = BIOIMAGES.get('sf')!.captionText;
-  }
-
-  ngOnInit(): void {
-
-  }
 }

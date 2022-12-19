@@ -1,4 +1,5 @@
-import { Component, HostListener} from '@angular/core';
+import { Component } from '@angular/core';
+import { Router, NavigationEnd } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -6,22 +7,34 @@ import { Component, HostListener} from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'jdp';
-  scrollTop = 0;
-  hideNav = false;
 
-  @HostListener('window:scroll') onScroll(e: Event): void {
-      console.log(this.getYPosition(e));
-   }
+  atBio: Boolean = false;
+  atHome: Boolean = false;
 
-  getYPosition(e: Event): number {
-       return (e.target as Element).scrollTop;
+  constructor(private router: Router) {
+    router.events.subscribe(val => {
+        if(val instanceof NavigationEnd) {
+          this.urlSwitch(val.url);
+        }
+    });
   }
 
-  // onScroll(event) {
-  //   console.log("scroll");
-  //   this.hideNav = this.scrollTop < event.target.scrollTop;
-  //   this.scrollTop = event.target.scrollTop;
-  // }
-
+  urlSwitch(newUrl: String) {
+    switch (newUrl) {
+      case '/bio':
+       this.atHome = false;
+       this.atBio = true;
+       break;
+      case '/home':
+       this.atHome = true;
+       this.atBio = false;
+       break;
+      case '/':
+       this.atHome = true;
+       this.atBio = false;
+       break;
+      default:
+       break;
+    }
+  }
 }

@@ -1,5 +1,3 @@
-
-
 .bioWrapper {
   position: relative;
   display: flex;
@@ -11,15 +9,33 @@
 }
 
 a, a:link {
-  color: #243245;
-  text-decoration: underline;
-}
-
-.top3 {
   color: #ff9999;
+  text-decoration: underline;
 }
 
 .header-center {
   display: flex;
+  text-align: center;
+  font-size: -webkit-xxx-large;
   justify-content: center;
+}
+
+.bioImage {
+  width: 45%;
+  padding-top: 2%;
+  display: flex;
+}
+
+figcaption {
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  .bioImage {
+    width: 80%;
+    padding-top: 2%;
+    display: flex;
+    margin: auto;
+  }
 }

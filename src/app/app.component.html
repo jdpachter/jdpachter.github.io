@@ -8,13 +8,12 @@
     <div class = "nav">
       <app-greetings></app-greetings>
       <div class = "nav-right">
-        <nav><a href="https://github.com/jdpachter"><img class = "gitLogo" src = "assets/Git-Icon-White.png"></a></nav>
+        <nav><a href="/home"><span [class.selected]="atHome" class="navText">Home</span></a></nav>
+        <nav><a href="/bio"><span [class.selected]="atBio" class="navText">Bio</span></a></nav>
         <nav><a href="https://linkedin.com/in/jdpachter"><img class = "liLogo" src = "assets/LI-In-Bug.png"></a></nav>
         <nav><a href="https://twitter.com/JoshuaPachter"><img class = "twitterLogo" src = "assets/twitterLogo.png"></a></nav>
         </div>
     </div>
   </div>
-  <app-bio></app-bio>
-  <!-- <app-wordcloud></app-wordcloud> -->
-
+    <router-outlet></router-outlet>
   </body>
