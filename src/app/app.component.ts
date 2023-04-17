@@ -8,8 +8,7 @@ import { Router, NavigationEnd } from '@angular/router';
 })
 export class AppComponent {
 
-  atBio: Boolean = false;
-  atHome: Boolean = false;
+  selected: String = "home";
 
   constructor(private router: Router) {
     router.events.subscribe(val => {
@@ -22,19 +21,13 @@ export class AppComponent {
   urlSwitch(newUrl: String) {
     switch (newUrl) {
       case '/bio':
-       this.atHome = false;
-       this.atBio = true;
-       break;
+        this.selected = "bio";
+        break;
       case '/home':
-       this.atHome = true;
-       this.atBio = false;
-       break;
       case '/':
-       this.atHome = true;
-       this.atBio = false;
-       break;
       default:
-       break;
+        this.selected = "home";
+        break;
     }
   }
 }

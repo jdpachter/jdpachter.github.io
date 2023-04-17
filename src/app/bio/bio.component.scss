@@ -1,11 +1,10 @@
 .bioWrapper {
-  position: relative;
   display: flex;
   width: 100%;
   padding-left: 10%;
   padding-right: 10%;
   padding-top: 20px;
-  min-height: 500px;
+  height: 100%;
 }
 
 a, a:link {
@@ -13,22 +12,16 @@ a, a:link {
   text-decoration: underline;
 }
 
+img {
+  width: 40vw;
+  align-self: center;
+}
+
 .header-center {
   display: flex;
   text-align: center;
   font-size: -webkit-xxx-large;
   justify-content: center;
-}
-
-.bioImage {
-  width: 45%;
-  padding-top: 2%;
-  display: flex;
-}
-
-figcaption {
-  font-size: 0.8rem;
-  text-align: center;
 }
 
 @media screen and (min-width: 0px) and (max-width: 768px) {
