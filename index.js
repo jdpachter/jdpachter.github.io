@@ -59,11 +59,12 @@ document.querySelectorAll('a').forEach(link => {
 window.addEventListener('load', () => {
     const url = window.location.hash.substring(1) || 'home';
     loadPageContent(url);
-    setTimeout(loadModals, 200);
-
 });
 
 function loadPageContent(url) {
+    if (!url) {
+        url = "home";
+    }
     if (url.startsWith("http") || url.startsWith("https")) {
         window.location.href = url;
     } else {
@@ -75,17 +76,3 @@ function loadPageContent(url) {
         });
     }
 }
-
-function loadModals() {
-    const imageContainer = document.querySelector('.bio-img');
-    const imageCaption = imageContainer.querySelector('.image-caption');
-    
-    imageContainer.addEventListener('mouseover', () => {
-        imageCaption.style.opacity = 1;
-    });
-    
-    imageContainer.addEventListener('mouseout', () => {
-        imageCaption.style.opacity = 0;
-    });
-}
-
