@@ -64,12 +64,16 @@ window.addEventListener('load', () => {
 });
 
 function loadPageContent(url) {
-    const filename = url + ".html";
-    fetch(filename)
-    .then(response => response.text())
-    .then(html => {
-        document.getElementById("page-content").innerHTML = html;
-    });
+    if (url.startsWith("http") || url.startsWith("https")) {
+        window.location.href = url;
+    } else {
+        const filename = url + ".html";
+        fetch(filename)
+        .then(response => response.text())
+        .then(html => {
+            document.getElementById("page-content").innerHTML = html;
+        });
+    }
 }
 
 function loadModals() {
