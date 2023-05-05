@@ -1,0 +1,180 @@
+/* Common styles */
+.welcome-banner {
+    color: #ff9999;
+    font-size: 3rem;
+    text-align: center;
+    margin: 10px;
+}
+
+.welcome-banner:focus {
+    outline: 0;
+}
+
+.nav a {
+    padding: 1px 25px;
+    color: #ff9999;
+    text-decoration: underline;
+}
+
+.nav a:hover,
+.nav a:active {
+    color: #ff9999;
+}
+
+a:link,
+a:visited {
+    color: #ff9999;
+    text-decoration: none;
+}
+
+
+.nav-right a {
+    display: flex;
+    align-items: center;
+}
+
+.twitterLogo,
+.liLogo {
+    width: 40px;
+}
+
+.navText {
+    font-size: 1.5rem;
+}
+
+.navText.selected {
+    font-weight: bold;
+    color: #ff9999;
+}
+
+.me {
+    color: pink;
+    font-size: 1.7rem;
+}
+
+.navText.active {
+    font-weight: bold;
+    color: #ff9999;
+}
+
+.nav-container {
+    width: 100%;
+    border-bottom: 1px solid #243245;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: #fff;
+}
+
+#page-content {
+    padding-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#content {
+    height: 100%; /* set the height of the content to the viewport height */
+    overflow-y: scroll; /* enable scrolling */
+}
+
+.bio-card-container {
+    scroll-snap-align: start; /* snap to the start of each bio-card */
+}
+
+.card {
+    box-shadow: 0 0 8px 0 rgba(255, 153, 154, 1);
+    padding: 5px 25px;
+    margin: 10px;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+.bio-img {
+    width: fit-content;
+    margin: auto 15px auto 15px;
+    display: inline-block;    
+    position: relative;
+}
+
+.bio-img img {
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.image-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.welcome-banner, .navText, p {
+    font-family: "halyard-display-variable", sans-serif;
+    font-variation-settings: "wght" 275;   
+    font-style: normal;
+}  
+
+.bio-img:hover {opacity: 0.7;}
+
+.bio-img-container {
+    height: 35%;
+    margin: 20px auto 20px auto;
+}
+
+/* Desktop styles */
+@media screen and (min-width: 768px) {
+    .nav-container {
+        display: inline-flex;
+    }
+    
+    .nav {
+        display: flex;
+        margin-left: auto;
+    }
+    
+    .nav-right {
+        display: flex;
+        align-items: center;
+    }
+    
+    .bio-img-container {
+        display: flex;
+        align-items: center;
+    }
+    
+    #page-content {
+        width: 60%;
+    }
+}
+
+/* Mobile styles */
+@media screen and (max-width: 767px) {
+    .nav-container {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .nav,
+    .nav-right {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .nav-right a {
+        margin-bottom: 10px;
+    }
+    
+    #page-content {
+        width: 75%;
+    }
+}
