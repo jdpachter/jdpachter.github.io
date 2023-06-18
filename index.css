@@ -6,8 +6,17 @@
     margin: 10px;
 }
 
+body {
+    min-width: fit-content;
+}
+
 .welcome-banner:focus {
     outline: 0;
+}
+
+.center-nav {
+    display: flex;
+    align-items: center;
 }
 
 .nav a {
@@ -48,6 +57,12 @@ a:visited {
     color: #ff9999;
 }
 
+.nav-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .me {
     color: pink;
     font-size: 1.7rem;
@@ -61,7 +76,6 @@ a:visited {
 .nav-container {
     width: 100%;
     border-bottom: 1px solid #243245;
-    position: -webkit-sticky;
     position: sticky;
     top: 0;
     left: 0;
@@ -143,11 +157,6 @@ img {
         margin-left: auto;
     }
     
-    .nav-right {
-        display: flex;
-        align-items: center;
-    }
-    
     .bio-img-container {
         display: flex;
         align-items: center;
@@ -163,12 +172,6 @@ img {
     .nav-container {
         display: flex;
         flex-direction: column;
-    }
-    
-    .nav,
-    .nav-right {
-        display: flex;
-        justify-content: center;
     }
     
     .nav-right a {
